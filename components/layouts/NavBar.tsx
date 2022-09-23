@@ -39,11 +39,8 @@ const [click, setClick] = useState<boolean>(true);
 							<button className='bg-yellow-500 hover:bg-yellow-600 p-2 h-12 w-24 rounded-lg font-bold'>
 								Login
 							</button>
-							<button className='bg-white hover:bg-gray-600 p-3 px-5 h-12  rounded-full flex flex-row gap-3'>
-								{/* <img src='/callicon.svg' alt='call' className='h-4 my-1 ' /> */}
-								<span className='text-black font-bold text-sm'>
-									800 456 889
-								</span>
+							<button className='bg-white font-bold text-sm hover:bg-gray-600 p-3 px-5  h-12  rounded-full'>
+								800 456 889
 							</button>
 						</div>
 					</div>

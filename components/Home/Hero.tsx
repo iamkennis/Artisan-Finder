@@ -12,7 +12,7 @@ export default function Hero() {
 					<div className='container absolute left-0 top-0 mt-4 bottom-0'>
 						<div className='flex flex-col items-center md:flex-row  lg:flex-row lg:justify-between  xl:justify-between'>
 							<div className='px-4 py-4'>
-								<p className='text-white text-xl font-bold lg:text-md'>
+								<p className='text-white mt-8 text-xl font-bold lg:text-md'>
 									Get a trusted Artisan right away!
 								</p>
 								<h2 className='text-white hidden lg:block md:block font-bold text-md md:text-4xl lg:text-4xl xl:text-6xl lg:text-left'>

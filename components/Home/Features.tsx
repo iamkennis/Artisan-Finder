@@ -131,7 +131,7 @@ export default function Features() {
 					<img src='/app-store.svg' className='h-32 my-4' />
 				</div>
 			</div>
-			<div className='bg-black w-full h-full lg:flex  lg:justify-around p-8'>
+			<div className='bg-black text-center w-full h-full lg:flex  lg:justify-around p-8'>
 				<div>
 					<h1 className='text-white font-bold text-3xl'>
 						Do you have any question?
@@ -143,7 +143,7 @@ export default function Features() {
 					</button>
 					<div>
 						<h1 className='text-white text-3xl font-bold'>899 567 567</h1>
-						<hr className='w-16 border-yellow-500' />
+						<hr className='w-16 border-yellow-500 ml-24' />
 						<address className='text-white'>
 							Address: Street 26 Tagupo St., corner G. Araneta
 						</address>
@@ -156,7 +156,9 @@ export default function Features() {
 						<li>PRIVACY POLICY</li>
 						<li>TERMS OF USE</li>
 					</ul>
-					<p className='py-4 text-sm'>COPYRIGHT© 2022 SuperProxy INC., ALL RIGHTS RESERVED</p>
+					<p className='py-4 text-sm'>
+						COPYRIGHT© 2022 SuperProxy INC., ALL RIGHTS RESERVED
+					</p>
 					<div className='flex flex-row justify-center h-8'>
 						<img src='/linkedin.svg' />
 						<img src='/facebook.svg' />
