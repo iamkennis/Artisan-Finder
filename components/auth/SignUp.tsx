@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Button from '../ui/Button'
+import Input from '../ui/Input'
 
 export default function SignUp() {
     const [name, setName] = useState('')
@@ -7,81 +9,75 @@ export default function SignUp() {
 	const [password, setPassword] = useState('')
 	const [province,setProvince] = useState('')
 	return (
-		<div>
-			<form className=''>
-				<p>what are you looking for</p>
-				<select>
+		<div className='flex flex-col items-center my-20'>
+			<form>
+				<p className='text-lg text-center font-bold'>
+					what are you looking for
+				</p>
+				<select className='text-sm mx-8 px-4 py-2 bg-transparent border-2 rounded-lg outline-none border-yellow-400 font-bold'>
 					<option value='I need an Artisan'>I need an Artisan</option>
 					<option value='I need an Artisan'>I need an Artisan</option>
 				</select>
-				<div>
+				<div className='text-lg text-center font-bold mb-5'>
 					<h1>Create an account</h1>
 					<p>Already have account? Signin</p>
 				</div>
-				<div>
-					<label htmlFor='text'>Name</label>
-					<br />
-					<input
-						className='p-3 w-64 appearance-none rounded font-normal outline-none pl-4 bg-gray-300 placeholder:text-black-700 text-sm'
-						id='text'
-						type='text'
-						onChange={(event) => setName(event.target.value)}
+				<div className='my-4'>
+					<Input
+						label='Name'
+						type='name'
+						onChange={setName}
 						placeholder='Enter your name'
 						value={name}
 					/>
 				</div>
-				<div>
-					<label htmlFor='text'>Last Name</label>
-					<br />
-					<input
-						className='p-3 w-64 appearance-none rounded font-normal outline-none pl-4 bg-gray-300 placeholder:text-black-700 text-sm'
-						id='text'
-						type='text'
-						onChange={(event) => setLastName(event.target.value)}
-						placeholder='Enter your name'
+				<div className='my-4'>
+					<Input
+						label='Last Name'
+						type='name'
+						onChange={setLastName}
+						placeholder='Enter your last name'
 						value={lastName}
 					/>
 				</div>
-				<div>
-					<label htmlFor='text'>Email</label>
-					<br />
-					<input
-						className='p-3 w-64 appearance-none rounded font-normal outline-none pl-4 bg-gray-300 placeholder:text-black-700 text-sm'
-						id='email'
+				<div className='my-4'>
+					<Input
+						label='Email'
 						type='email'
-						onChange={(event) => setEmail(event.target.value)}
+						onChange={setEmail}
 						placeholder='Enter your email'
 						value={email}
 					/>
 				</div>
-				<div>
-					<label htmlFor='text'>Password</label>
-					<br />
-					<input
-						className='p-3 w-64 appearance-none rounded font-normal outline-none pl-4 bg-gray-300 placeholder:text-black-700 text-sm'
-						id='text'
-						type='text'
-						onChange={(event) => setPassword(event.target.value)}
+				<div className='my-4'>
+					<Input
+						label='Password'
+						type='password'
+						onChange={setPassword}
 						placeholder='Enter your password'
 						value={password}
 					/>
 				</div>
-				<div>
-					<label htmlFor='text'>State/Province</label>
-					<br />
-					<input
-						className='p-3 w-64 appearance-none rounded font-normal outline-none pl-4 bg-gray-300 placeholder:text-black-700 text-sm'
-						id='text'
-						type='text'
-						onChange={(event) => setProvince(event.target.value)}
+				<div className='my-4'>
+					<Input
+						label='State/Province'
+						type='city'
+						onChange={setProvince}
 						placeholder='Enter your province'
 						value={province}
 					/>
 				</div>
-				<button className='md:h-10 w-34 pl-3 pr-3 bg-amber-400 hover:bg-yellow-600 rounded-lg font-bold text-black'>
-					Create an account
-				</button>
+				<div className='my-4'>
+					<Button>Create an account</Button>
+				</div>
 			</form>
+			<p className='text-slate-700 text-sm leading-none my-1'>
+				By clicking Create account,I agree that <br />I have read and accepted
+				the
+				<br />
+				<span className='text-yellow-400'>Terms of Use</span> and{' '}
+				<span className='text-yellow-400'>Privacy Policy</span>
+			</p>
 		</div>
 	);
 }
