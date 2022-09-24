@@ -28,28 +28,28 @@ export default function Hero() {
 								</h2>
 							</div>
 							<div className='flex flex-col lg:flex-col md:pt-10 lg:my-32'>
-								<div className='max-w-md mx-4 overflow-hidden md:w-80 lg:w-96  bg-yellow-500 p-4 lg:p-4 md:p-8 rounded-lg'>
-									<h2 className=' text-lg lg:text-4xl font-bold'>
+								<div className='max-w-md mx-4 overflow-hidden md:w-80 lg:w-96  bg-yellow-500 p-8 lg:p-4 md:p-8 rounded-lg'>
+									<h2 className=' text-2xl lg:text-4xl font-bold'>
 										Find Artisan
 									</h2>
-									<p className='py-4'>
+									<p className='py-4 text-xl lg:text-md'>
 										We make your job easier – that means finding you the best
 										Artisan within reach.
 									</p>
 									<button
-										className='bg-white hover:bg-gray-600 h-10 w-24 rounded-lg font-bold'
+										className='bg-white hover:bg-gray-600 h-12 w-28 rounded-lg font-bold'
 										onClick={handleHire}>
 										Hire now
 									</button>
 								</div>
-								<div className='max-w-md mx-4 bg-white overflow-hidden md:w-80 p-4 md:p-8 lg:p-4 lg:w-96 mt-4 lg:mt-0 rounded-lg relative lg:right-14'>
-									<h2 className=' text-lg lg:text-4xl font-bold'>Find Work</h2>
-									<p className='py-4'>
+								<div className='max-w-md mx-4 bg-white overflow-hidden md:w-80 p-8 md:p-8 lg:p-4 lg:w-96 mt-4 lg:mt-0 rounded-lg relative lg:right-14'>
+									<h2 className=' text-2xl lg:text-4xl font-bold'>Find Work</h2>
+									<p className='py-4 text-xl lg:text-md'>
 										We make your job easier – that means finding you the best
 										Artisan within reach.
 									</p>
 									<button
-										className='bg-yellow-500 hover:bg-yellow-600 h-10 w-24 rounded-lg font-bold'
+										className='bg-yellow-500 hover:bg-yellow-600 h-12 w-28 rounded-lg font-bold'
 										onClick={handleWork}>
 										Find work
 									</button>
