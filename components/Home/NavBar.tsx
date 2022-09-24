@@ -1,21 +1,20 @@
 import React,{useState} from 'react'
 import Link from 'next/link'
 import {FaHamburger, FaTimes} from 'react-icons/fa'
-import { Router } from 'next/router';
+import { useRouter } from 'next/router';
 
 export default function NavBar() {
 const [click, setClick] = useState<boolean>(true);
 	const handleClick = () => setClick(!click);
-	
-	// const handleRouter = () => {
-	// 	router()
-	// }
+	const router = useRouter();
+
+	const handleRouter = () => router.push('signin');
 
   return (
 		<nav>
 			<div
 				onClick={handleClick}
-				className='md:hidden lg:hidden  absolute top-0 z-50'>
+				className='md:hidden lg:hidden  fixed top-0 z-50'>
 				<div className='md:hidden lg:hidden text-white text-xl right-12 top-6 absolute z-50'>
 					<FaTimes onClick={handleClick} />
 				</div>
@@ -36,7 +35,9 @@ const [click, setClick] = useState<boolean>(true);
 							</li>
 						</ul>
 						<div className='flex flex-col my-4 space-y-4 items-center'>
-							<button className='bg-yellow-500 hover:bg-yellow-600 p-2 h-12 w-24 rounded-lg font-bold'>
+							<button
+								className='bg-yellow-500 hover:bg-yellow-600 p-2 h-12 w-24 rounded-lg font-bold'
+								onClick={handleRouter}>
 								Login
 							</button>
 							<button className='bg-white font-bold text-sm hover:bg-gray-600 p-3 px-5  h-12  rounded-full'>
@@ -46,7 +47,7 @@ const [click, setClick] = useState<boolean>(true);
 					</div>
 				)}
 			</div>
-			<div className='flex flex-row items-center justify-between px-12'>
+			<div className='w-full flex flex-row items-center  lg:fixed lg:top-0 lg:z-50 bg-white justify-between px-12'>
 				<div className='py-5'>
 					<img src='/superproxy.svg' className='h-6 lg:h-8' />
 				</div>
@@ -70,7 +71,9 @@ const [click, setClick] = useState<boolean>(true);
 					</li>
 				</ul>
 				<div className='hidden md:flex lg:flex lg:flex-row h-full gap-4 my-4 items-center'>
-					<button className='bg-yellow-500 hover:bg-yellow-600 p-2 h-12 w-24 rounded-lg font-bold'>
+					<button
+						className='bg-yellow-500 hover:bg-yellow-600 p-2 h-12 w-24 rounded-lg font-bold'
+						onClick={handleRouter}>
 						Login
 					</button>
 					<button className='bg-black hover:bg-gray-600 p-3 px-5 h-12  rounded-full flex flex-row gap-3'>

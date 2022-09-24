@@ -1,7 +1,14 @@
+import { useRouter } from 'next/router';
 import React from 'react'
-import Link from 'next/link'
 
 export default function Features() {
+
+		const router = useRouter();
+
+		const handleWork = () => router.push('findwork');
+		const handleHire = () => router.push('findhire');
+
+
   return (
 		<main>
 			<div className='mt-8 px-14'>
@@ -40,14 +47,16 @@ export default function Features() {
 					<hr className='w-16 border-yellow-500 mb-4' />
 				</div>
 				<div className='grid grid-row-2 md:grid-cols-2 xlg:grid-cols-2'>
-					<div className='max-w-3xl lg:max-w-2xl p-12 lg:h-64  h-64  overflow-hidden bg-white flex flex-row gap-4 items-center'>
+					<div className='max-w-3xl lg:max-w-2xl p-8 lg:h-64  h-64  overflow-hidden bg-white flex flex-row gap-4 items-center'>
 						<img src='/coolicon.svg' className='h-8' />
 						<h3 className='text-2xl md:text-2xl font-bold'>
 							What our <br /> Clients say
 						</h3>
 					</div>
-					<div className='max-w-3xl lg:max-w-2xl p-12 xlg:h-64  h-72  overflow-hidden bg-black'>
-						<span className='text-yellow-600 text-md font-bold'>“</span>
+					<div className='max-w-3xl lg:max-w-2xl p-12 lg:h-64 overflow-hidden bg-black'>
+						<span className='text-yellow-600 text-md lg:text-2xl font-bold'>
+							“
+						</span>
 						<p className='text-white text-2xl font-bold'>
 							All of my expectations were not only met, but exceeded
 						</p>
@@ -58,8 +67,10 @@ export default function Features() {
 				</div>
 			</div>
 			<div className='grid grid-row-2 md:grid-cols-2 lg:grid-cols-2'>
-				<div className='max-w-3xl lg:max-w-2xl p-12 lg:h-64 overflow-hidden bg-black'>
-					<span className='text-yellow-600 text-xl font-bold'>“</span>
+				<div className='max-w-3xl lg:max-w-2xl p-8 lg:h-64 overflow-hidden bg-black'>
+					<span className='text-yellow-600 text-md lg:text-2xl font-bold'>
+						“
+					</span>
 					<p className='text-white text-2xl font-bold'>
 						Gives connectivity and recognition of your handwork, from far and
 						near.
@@ -91,7 +102,9 @@ export default function Features() {
 							We make it easy for you to hire the most proficient Artisan with
 							years of experience, and the exact skills you’re looking for.
 						</p>
-						<button className='bg-yellow-500 hover:bg-yellow-600 h-10 w-24 rounded-lg font-bold'>
+						<button
+							className='bg-yellow-500 hover:bg-yellow-600 h-12 w-32 lg:h-12 lg:w-28 rounded-lg font-bold'
+							onClick={handleHire}>
 							Hire now
 						</button>
 					</div>
@@ -102,7 +115,9 @@ export default function Features() {
 							We make it easy for you to hire the most proficient Artisan with
 							years of experience, and the exact skills you’re looking for.
 						</p>
-						<button className='bg-black text-white hover:bg-gray-600 h-10 w-24 rounded-lg font-bold'>
+						<button
+							className='bg-black text-white hover:bg-gray-600 h-12 w-32 lg:h-12 lg:w-28 rounded-lg font-bold'
+							onClick={handleWork}>
 							Find work
 						</button>
 					</div>
@@ -147,23 +162,6 @@ export default function Features() {
 						<address className='text-white'>
 							Address: Street 26 Tagupo St., corner G. Araneta
 						</address>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div className='text-center my-8 h-full'>
-					<ul className='flex flex-col lg:flex-row lg:gap-4 lg:justify-center text-yellow-500'>
-						<li>PRIVACY POLICY</li>
-						<li>TERMS OF USE</li>
-					</ul>
-					<p className='py-4 text-sm'>
-						COPYRIGHT© 2022 SuperProxy INC., ALL RIGHTS RESERVED
-					</p>
-					<div className='flex flex-row justify-center h-8'>
-						<img src='/linkedin.svg' />
-						<img src='/facebook.svg' />
-						<img src='/instagram.svg' />
-						<img src='/twitter.svg' />
 					</div>
 				</div>
 			</div>

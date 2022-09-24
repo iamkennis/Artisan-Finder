@@ -1,10 +1,11 @@
 import React from 'react'
 import SignIn from '../../components/auth/SignIn'
+import Layout from '../../components/layouts/Layout';
 
 export default function SignInPage() {
     return (
-        <div>
-            <SignIn />
-        </div>
-    );
+			<Layout>
+				<SignIn />
+			</Layout>
+		);
 }
