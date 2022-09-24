@@ -22,13 +22,13 @@ export default function Hero() {
 								<p className='text-white my-2 text-center lg:text-left text-xl font-bold lg:text-md'>
 									Get a trusted Artisan right away!
 								</p>
-								<h2 className='text-white text-2xl py-4 text-center lg:block md:block font-bold text-md md:text-4xl lg:text-4xl xl:text-6xl lg:text-left'>
+								<h2 className='hidden text-white text-xl py-4 text-center lg:block md:block font-bold text-md md:text-4xl lg:text-4xl xl:text-6xl lg:text-left'>
 									Connect to over 200k plus <br /> Artisans & Businesses
 									<br /> across the Philipines
 								</h2>
 							</div>
 							<div className='flex flex-col lg:flex-col md:pt-10 lg:my-32'>
-								<div className='max-w-md mx-4 overflow-hidden md:w-80 lg:w-96  bg-yellow-500 p-12 lg:p-4 md:p-8 rounded-lg'>
+								<div className='max-w-md mx-4 overflow-hidden md:w-80 lg:w-96  bg-yellow-500 p-4 lg:p-4 md:p-8 rounded-lg'>
 									<h2 className=' text-lg lg:text-4xl font-bold'>
 										Find Artisan
 									</h2>
@@ -42,7 +42,7 @@ export default function Hero() {
 										Hire now
 									</button>
 								</div>
-								<div className='max-w-md mx-4 bg-white overflow-hidden md:w-80 p-12 md:p-8 lg:p-4 lg:w-96 mt-4 lg:mt-0 rounded-lg relative lg:right-14'>
+								<div className='max-w-md mx-4 bg-white overflow-hidden md:w-80 p-4 md:p-8 lg:p-4 lg:w-96 mt-4 lg:mt-0 rounded-lg relative lg:right-14'>
 									<h2 className=' text-lg lg:text-4xl font-bold'>Find Work</h2>
 									<p className='py-4'>
 										We make your job easier – that means finding you the best
