@@ -19,7 +19,7 @@ export default function Hero() {
 					<div className='container absolute left-0 top-0 mt-4 bottom-0'>
 						<div className='flex flex-col items-center md:flex-row  lg:flex-row lg:justify-between  xl:justify-between'>
 							<div className='px-4 pt-12'>
-								<p className='text-white my-2 text-center lg:text-left text-xl font-bold lg:text-md'>
+								<p className='text-white my-2 text-center lg:text-left text-2xl font-bold lg:text-md'>
 									Get a trusted Artisan right away!
 								</p>
 								<h2 className='hidden text-white text-xl py-4 text-center lg:block md:block font-bold text-md md:text-4xl lg:text-4xl xl:text-6xl lg:text-left'>
@@ -32,7 +32,7 @@ export default function Hero() {
 									<h2 className=' text-2xl lg:text-4xl font-bold'>
 										Find Artisan
 									</h2>
-									<p className='py-4 text-xl lg:text-md'>
+									<p className='py-4 text-md font-bold lg:font-normal'>
 										We make your job easier – that means finding you the best
 										Artisan within reach.
 									</p>
@@ -44,7 +44,7 @@ export default function Hero() {
 								</div>
 								<div className='max-w-md mx-4 bg-white overflow-hidden md:w-80 p-8 md:p-8 lg:p-4 lg:w-96 mt-4 lg:mt-0 rounded-lg relative lg:right-14'>
 									<h2 className=' text-2xl lg:text-4xl font-bold'>Find Work</h2>
-									<p className='py-4 text-xl lg:text-md'>
+									<p className='py-4 text-md font-bold lg:font-normal'>
 										We make your job easier – that means finding you the best
 										Artisan within reach.
 									</p>

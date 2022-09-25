@@ -12,7 +12,7 @@ export default function Features() {
   return (
 		<main>
 			<div className='mt-8 px-14'>
-				<p className='text-black font-bold text-xl md:text-md'>
+				<p className='text-black font-bold text-2xl md:text-md'>
 					What is SuperProxy?
 				</p>
 				<hr className='w-16 border-yellow-500 mb-4' />
@@ -26,7 +26,7 @@ export default function Features() {
 					</h1>
 				</div>
 				<div className='max-w-3xl lg:max-w-2xl px-4'>
-					<p className='text-black text-md leading-6  md:max-w-lg my-4'>
+					<p className='text-black text-md font-semi-bold lg:font-normal leading-6  md:max-w-lg my-4'>
 						SuperProxy is a community of expert Artisans providing your needed
 						services around the home and office. We guarantee comfort and peace
 						of mind with our sole commitment to pairing every client –
@@ -34,14 +34,14 @@ export default function Features() {
 						area to ensure you get top talent service in time and at the best
 						price available.
 					</p>
-					<span className='text-lg font-bold text-yellow-500'>
+					<span className='text-xl font-bold text-yellow-500'>
 						More About Us
 					</span>
 				</div>
 			</div>
 			<div className='mt-8'>
 				<div className='px-14'>
-					<p className='text-black font-bold text-xl md:text-md'>
+					<p className='text-black font-bold text-2xl md:text-md'>
 						Testimonials
 					</p>
 					<hr className='w-16 border-yellow-500 mb-4' />
@@ -49,7 +49,7 @@ export default function Features() {
 				<div className='grid grid-row-2 md:grid-cols-2 xlg:grid-cols-2'>
 					<div className='max-w-3xl lg:max-w-2xl p-8 lg:h-64  h-64  overflow-hidden bg-white flex flex-row gap-4 items-center'>
 						<img src='/coolicon.svg' className='h-8' />
-						<h3 className='text-2xl md:text-2xl font-bold'>
+						<h3 className='text-3xl md:text-2xl font-bold'>
 							What our <br /> Clients say
 						</h3>
 					</div>
@@ -81,7 +81,7 @@ export default function Features() {
 				</div>
 				<div className='max-w-3xl lg:max-w-2xl p-12 lg:h-64 overflow-hidden bg-white flex flex-row lg:ml-32 gap-4 items-center'>
 					<img src='/coolicon.svg' className='h-8' />
-					<h3 className='text-2xl md:text-2xl font-bold'>
+					<h3 className='text-3xl md:text-2xl font-bold'>
 						What our <br /> Artisans say
 					</h3>
 				</div>
@@ -89,7 +89,7 @@ export default function Features() {
 			<div className=''>
 				<div className='grid grid-row-2 md:grid-cols-2 lg:grid-cols-2'>
 					<div className='max-w-3xl lg:max-w-xl p-12 lg:h-60 lg:pt-32 lg:pl-32 overflow-hidden'>
-						<h2 className='text-black text-2xl lg:text-4xl font-bold'>
+						<h2 className='text-black text-4xl lg:text-4xl font-bold'>
 							<strong className='text-yellow-500'>200k</strong> Plus Artisans on
 							our platform
 						</h2>
@@ -98,7 +98,7 @@ export default function Features() {
 						</span>
 					</div>
 					<div className='max-w-3xl lg:max-w-sm p-12 lg:h-72 lg:pt-24 overflow-hidden'>
-						<p className='text-md py-4'>
+						<p className='text-xl py-4 font-semi-bold lg:font-normal'>
 							We make it easy for you to hire the most proficient Artisan with
 							years of experience, and the exact skills you’re looking for.
 						</p>
@@ -111,7 +111,7 @@ export default function Features() {
 				</div>
 				<div className='grid grid-row-2 md:grid-cols-2 lg:grid-cols-2'>
 					<div className='max-w-3xl lg:max-w-md p-12 lg:h-72 h-64  lg:pl-32 overflow-hidden'>
-						<p className='text-md py-4'>
+						<p className='text-xl py-4 font-semi-bold lg:font-normal'>
 							We make it easy for you to hire the most proficient Artisan with
 							years of experience, and the exact skills you’re looking for.
 						</p>
@@ -122,7 +122,7 @@ export default function Features() {
 						</button>
 					</div>
 					<div className='max-w-3xl lg:max-w-sm p-12 lg:h-72 h-64   overflow-hidden'>
-						<h2 className='text-black text-2xl lg:text-4xl font-bold'>
+						<h2 className='text-black text-4xl lg:text-4xl font-bold'>
 							Over <strong className='text-yellow-500'>2000</strong> Jobs Posted
 							daily
 						</h2>
@@ -140,7 +140,7 @@ export default function Features() {
 					/>
 				</div>
 				<div className='my-12 mx-24 lg:h-72 lg:m-24 lg:max-w-xs'>
-					<h1 className='font-bold text-2xl lg:text-3xl'>
+					<h1 className='font-bold text-3xl lg:text-3xl'>
 						Download the SuperProxy App
 					</h1>
 					<img src='/app-store.svg' className='h-32 my-4' />
