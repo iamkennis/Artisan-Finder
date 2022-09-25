@@ -110,7 +110,7 @@ export default function Features() {
 					</div>
 				</div>
 				<div className='grid grid-row-2 md:grid-cols-2 lg:grid-cols-2'>
-					<div className='max-w-3xl lg:max-w-md p-12 lg:h-72 h-64  lg:pl-32 overflow-hidden'>
+					<div className='max-w-4fixxl lg:max-w-md p-12 lg:h-72 h-64  lg:pl-32 overflow-hidden'>
 						<p className='text-xl py-4 font-semi-bold lg:font-normal'>
 							We make it easy for you to hire the most proficient Artisan with
 							years of experience, and the exact skills you’re looking for.
