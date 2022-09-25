@@ -139,8 +139,8 @@ export default function Features() {
 						className='w-full md:max-w-md lg:max-w-2xl md:h-full lg:h-full'
 					/>
 				</div>
-				<div className='my-12 mx-24 lg:h-72 lg:m-24 lg:max-w-xs'>
-					<h1 className='font-bold text-xl lg:text-3xl'>
+				<div className='my-12 p-4 md:items-center flex flex-col items-center lg:h-72 lg:m-24 lg:max-w-xs'>
+					<h1 className='font-bold text-2xl lg:text-3xl'>
 						Download the SuperProxy App
 					</h1>
 					<img src='/app-store.svg' className='h-32 my-4' />
