@@ -111,7 +111,7 @@ export default function Features() {
 				</div>
 				<div className='grid grid-row-2 md:grid-cols-2 lg:grid-cols-2'>
 					<div className='max-w-4fixxl lg:max-w-md p-12 lg:h-72 h-64  lg:pl-32 overflow-hidden'>
-						<p className='text-xl py-4 font-semi-bold lg:font-normal'>
+						<p className='text-xl py-2 font-semi-bold lg:font-normal'>
 							We make it easy for you to hire the most proficient Artisan with
 							years of experience, and the exact skills you’re looking for.
 						</p>
@@ -140,7 +140,7 @@ export default function Features() {
 					/>
 				</div>
 				<div className='my-12 mx-24 lg:h-72 lg:m-24 lg:max-w-xs'>
-					<h1 className='font-bold text-3xl lg:text-3xl'>
+					<h1 className='font-bold text-xl lg:text-3xl'>
 						Download the SuperProxy App
 					</h1>
 					<img src='/app-store.svg' className='h-32 my-4' />
