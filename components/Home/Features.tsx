@@ -121,7 +121,7 @@ export default function Features() {
 							Find work
 						</button>
 					</div>
-					<div className='max-w-3xl lg:max-w-sm p-12 lg:h-72 h-64   overflow-hidden'>
+					<div className='max-w-3xl lg:max-w-sm p-14 lg:h-72 h-64   overflow-hidden'>
 						<h2 className='text-black text-4xl lg:text-4xl font-bold'>
 							Over <strong className='text-yellow-500'>2000</strong> Jobs Posted
 							daily
