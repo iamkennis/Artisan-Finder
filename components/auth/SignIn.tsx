@@ -46,7 +46,7 @@ export default function SignIn() {
 					Contiune with Facebook
 				</button>
 			</div>
-			<div className='my-1'>
+			<div className='my-4'>
 				<p className='text-slate-700 text-sm leading-none'>
 					By clicking Create account,I agree that <br />I have read and accepted
 					the

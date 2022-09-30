@@ -15,7 +15,7 @@ export default function SignUp() {
 					what are you looking for
 				</p>
 				<select className='text-sm mx-8 px-4 py-2 bg-transparent border-2 rounded-lg outline-none border-yellow-400 font-bold'>
-					<option value='I need an Artisan'>I need an Artisan</option>
+					<option value='I need an Artisan'>I need an Krtisan</option>
 					<option value='I need an Artisan'>I need an Artisan</option>
 				</select>
 				<div className='text-lg text-center font-bold mb-5'>

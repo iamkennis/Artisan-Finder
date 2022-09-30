@@ -10,7 +10,7 @@ export default function Hero() {
 
     return (
 			<header>
-				<div className='relative z-10'>
+			<div className="relative z-10">
 					<img
 						src='/sp.png'
 						className='h-screen  bg-cover w-full md:h-3/7 lg:h-2/4'

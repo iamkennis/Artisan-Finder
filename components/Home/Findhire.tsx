@@ -28,7 +28,7 @@ export default function FindHire() {
 							className='h-12 bg-white  px-4 rounded-l-lg outline-none border-none'
 							placeholder='Search'
 						/>
-						<button className='bg-yellow-500 hover:bg-yellow-600 h-12 w-24 rounded-lg font-bold'>
+						<button className='bg-yellow-500 hover:bg-yellow-600 h-12 w-28 rounded-lg font-bold'>
 							Search
 						</button>
 					</form>
