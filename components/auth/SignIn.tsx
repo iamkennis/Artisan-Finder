@@ -1,56 +1,68 @@
-import { useState } from "react";
-import Button from "../ui/Button";
-import Input from '../ui/Input'
+import { useState } from 'react';
+import Button from '../ui/Button';
+import Input from '../ui/Input';
+import Link from 'next/link';
+import { FaEye, FaEyeSlash, FaFacebook, FaGoogle } from 'react-icons/fa';
+import { useToggle } from '../Home/NavBar';
 
 export default function SignIn() {
-	const [email, setEmail] = useState('')
-	const [password, setPassword] = useState('')
+	const [email, setEmail] = useState('');
+	const [password, setPassword] = useState('');
+	const [isToggle, toggle]: any = useToggle();
+	const [loading, setLoading] = useState(false);
 
 	return (
 		<div className='flex flex-col items-center my-28'>
-			<div className='text-lg text-center font-bold mb-5'>
-				<h1>Sign In</h1>
-				<p>New User? Create an account</p>
+			<div className='text-center mb-5'>
+				<h1 className='font-bold text-lg'>Sign In</h1>
+				<p className='font-normal text-[14px]'>
+					New User?{' '}
+					<Link href='/signup'>
+						<span className='text-yellow-400 font-bold text-[14px] cursor-auto'>
+							Create an account
+						</span>
+					</Link>
+				</p>
 			</div>
 			<form className=''>
 				<div>
-					<label htmlFor='text'>Email Address</label>
-					<br />
 					<Input
+						label='Email Address'
 						type='email'
 						onChange={setEmail}
 						placeholder='Enter your email'
 						value={email}
 					/>
 				</div>
-				<div>
-					<label htmlFor='password'>Password</label>
-					<br />
+				<div className='my-2'>
 					<Input
-						type='password'
+						label='Password'
+						type={isToggle ? 'password' : 'text'}
 						onChange={setPassword}
 						placeholder='Enter your password'
 						value={password}
+						onClick={toggle}
+						icons={isToggle ? <FaEye /> : <FaEyeSlash />}
 					/>
 				</div>
 				<div className='mt-3'>
-					<Button>Login</Button>
+					<Button loading={loading}>Login</Button>
 				</div>
 			</form>
 			<div className='flex flex-col gap-4'>
 				<span className='text-center'>Or</span>
-				<button className='h-10 w-64 bg-transparent border-2 border-gray-200  hover:text-white hover:bg-red-500 font-bold rounded-lg text-black'>
-					Contiune with Google
+				<button className='h-10 w-64 border-1 border-gray-200 text-white bg-red-500 font-bold rounded-[3px] text-black'>
+					<FaGoogle /> Contiune with Google
 				</button>
-				<button className='h-10 w-64 bg-transparent border-2 hover:text-white hover:bg-blue-600 rounded-lg font-bold text-black'>
-					Contiune with Facebook
+				<button className='h-10 w-64 text-white bg-blue-600 rounded-[3px] font-bold text-black'>
+					<span className='flex justify-center items-center gap-2'>
+						<FaFacebook /> Contiune with Facebook
+					</span>
 				</button>
 			</div>
-			<div className='my-4'>
-				<p className='text-slate-700 text-sm leading-none'>
-					By clicking Create account,I agree that <br />I have read and accepted
-					the
-					<br />
+			<div className='text-center mt-4'>
+				<p className='text-slate-700 text-sm leading-none my-1'>
+					By clicking Create account,I agree that I have read and accepted the{' '}
 					<span className='text-yellow-400'>Terms of Use</span> and{' '}
 					<span className='text-yellow-400'>Privacy Policy</span>
 				</p>
