@@ -1,15 +1,13 @@
 import { useRouter } from 'next/router';
-import React from 'react'
+import React from 'react';
 
 export default function Features() {
+	const router = useRouter();
 
-		const router = useRouter();
+	const handleWork = () => router.push('findwork');
+	const handleHire = () => router.push('findhire');
 
-		const handleWork = () => router.push('findwork');
-		const handleHire = () => router.push('findhire');
-
-
-  return (
+	return (
 		<main>
 			<div className='mt-8 px-14'>
 				<p className='text-black font-bold text-2xl md:text-md'>
@@ -48,12 +46,15 @@ export default function Features() {
 				</div>
 				<div className='grid grid-row-2 md:grid-cols-2 xlg:grid-cols-2'>
 					<div className='max-w-3xl lg:max-w-2xl p-8 lg:h-64  h-64  overflow-hidden bg-white flex flex-row gap-4 items-center'>
-						<img src='/coolicon.svg' className='h-8' />
+						<img
+							src='/coolicon.svg'
+							className='h-8'
+						/>
 						<h3 className='text-3xl md:text-2xl font-bold'>
 							What our <br /> Clients say
 						</h3>
 					</div>
-					<div className='max-w-3xl lg:max-w-2xl p-12 lg:h-64 overflow-hidden bg-black'>
+					<div className='max-w-3xl md:max-w-full p-12 md:h-64 overflow-hidden bg-black'>
 						<span className='text-yellow-600 text-md lg:text-2xl font-bold'>
 							“
 						</span>
@@ -67,7 +68,7 @@ export default function Features() {
 				</div>
 			</div>
 			<div className='grid grid-row-2 md:grid-cols-2 lg:grid-cols-2'>
-				<div className='max-w-3xl lg:max-w-2xl p-8 lg:h-64 overflow-hidden bg-black'>
+				<div className='max-w-3xl md:max-w-full p-8 md:h-64 overflow-hidden bg-black'>
 					<span className='text-yellow-600 text-md lg:text-2xl font-bold'>
 						“
 					</span>
@@ -79,8 +80,11 @@ export default function Features() {
 						Jarvis, Carpenter
 					</small>
 				</div>
-				<div className='max-w-3xl lg:max-w-2xl p-12 lg:h-64 overflow-hidden bg-white flex flex-row lg:ml-32 gap-4 items-center'>
-					<img src='/coolicon.svg' className='h-8' />
+				<div className='max-w-3xl md:max-w-2xl p-12 md:h-64 overflow-hidden bg-white flex flex-row md:ml-32 gap-4 items-center'>
+					<img
+						src='/coolicon.svg'
+						className='h-8'
+					/>
 					<h3 className='text-3xl md:text-2xl font-bold'>
 						What our <br /> Artisans say
 					</h3>
@@ -103,7 +107,7 @@ export default function Features() {
 							years of experience, and the exact skills you’re looking for.
 						</p>
 						<button
-							className='bg-yellow-500 hover:bg-yellow-600 h-12 w-32 lg:h-12 lg:w-28 rounded-lg font-bold'
+							className='bg-yellow-500 hover:bg-yellow-600 h-10 w-32 lg:h-10 lg:w-28 rounded-[3px] font-bold'
 							onClick={handleHire}>
 							Hire now
 						</button>
@@ -116,7 +120,7 @@ export default function Features() {
 							years of experience, and the exact skills you’re looking for.
 						</p>
 						<button
-							className='bg-black text-white hover:bg-gray-600 h-12 w-32 lg:h-12 lg:w-28 rounded-lg font-bold'
+							className='bg-black text-white hover:bg-gray-200 h-10 w-32 lg:h-10 lg:w-28 rounded-[3px] font-bold'
 							onClick={handleWork}>
 							Find work
 						</button>
@@ -143,7 +147,10 @@ export default function Features() {
 					<h1 className='font-bold text-2xl lg:text-3xl'>
 						Download the SuperProxy App
 					</h1>
-					<img src='/app-store.svg' className='h-32 my-4' />
+					<img
+						src='/app-store.svg'
+						className='h-32 my-4'
+					/>
 				</div>
 			</div>
 			<div className='bg-black text-center w-full h-full lg:flex  lg:justify-around p-8'>
@@ -153,7 +160,7 @@ export default function Features() {
 					</h1>
 				</div>
 				<div className='lg:flex lg:flex-row lg:gap-8'>
-					<button className='bg-white text-black hover:bg-gray-600 h-10 my-4 w-24 rounded-lg font-bold'>
+					<button className='bg-white text-black hover:bg-gray-200 h-10 my-4 w-24 rounded-[3px] font-bold'>
 						Contact us
 					</button>
 					<div>
