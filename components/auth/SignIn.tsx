@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useReducer } from 'react';
 import Button from '../ui/Button';
 import Input from '../ui/Input';
 import Link from 'next/link';
@@ -6,6 +6,17 @@ import { FaEye, FaEyeSlash, FaFacebook, FaGoogle } from 'react-icons/fa';
 import { useToggle } from '../Home/NavBar';
 
 export default function SignIn() {
+	// const [event, updateEvent] = useReducer(
+	// 	(prev: any, next: any) => {
+	// 		return { ...prev, ...next };
+	// 	},
+	// 	{
+	// 		email: '',
+	// 		password: '',
+	// 		isToggle: '',
+	// 		loading: false
+	// 	},
+	// );
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [isToggle, toggle]: any = useToggle();
@@ -35,15 +46,15 @@ export default function SignIn() {
 					/>
 				</div>
 				<div className='my-2'>
-					<Input
-						label='Password'
-						type={isToggle ? 'password' : 'text'}
-						onChange={setPassword}
-						placeholder='Enter your password'
-						value={password}
-						onClick={toggle}
-						icons={isToggle ? <FaEye /> : <FaEyeSlash />}
-					/>
+				<Input
+							label='Password'
+							type={isToggle ? 'text' : 'password'}
+							onChange={setPassword}
+							placeholder='Enter your password'
+							value={password}
+							onClick={toggle}
+							icons={isToggle ? <FaEyeSlash /> : <FaEye />}
+						/>
 				</div>
 				<div className='mt-3'>
 					<Button loading={loading}>Login</Button>
@@ -52,7 +63,9 @@ export default function SignIn() {
 			<div className='flex flex-col gap-4'>
 				<span className='text-center'>Or</span>
 				<button className='h-10 w-64 border-1 border-gray-200 text-white bg-red-500 font-bold rounded-[3px] text-black'>
+					<span className='flex justify-center items-center gap-2'>
 					<FaGoogle /> Contiune with Google
+					</span>
 				</button>
 				<button className='h-10 w-64 text-white bg-blue-600 rounded-[3px] font-bold text-black'>
 					<span className='flex justify-center items-center gap-2'>
@@ -60,7 +73,7 @@ export default function SignIn() {
 					</span>
 				</button>
 			</div>
-			<div className='text-center mt-4'>
+			<div className='text-center mt-4 px-18'>
 				<p className='text-slate-700 text-sm leading-none my-1'>
 					By clicking Create account,I agree that I have read and accepted the{' '}
 					<span className='text-yellow-400'>Terms of Use</span> and{' '}

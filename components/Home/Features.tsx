@@ -107,7 +107,7 @@ export default function Features() {
 							years of experience, and the exact skills you’re looking for.
 						</p>
 						<button
-							className='bg-yellow-500 hover:bg-yellow-600 h-10 w-32 lg:h-10 lg:w-28 rounded-[3px] font-bold'
+							className='bg-yellow-500 text-white hover:bg-yellow-600 h-10 w-32 lg:h-10 lg:w-28 rounded-[3px] font-bold'
 							onClick={handleHire}>
 							Hire now
 						</button>

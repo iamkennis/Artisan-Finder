@@ -28,7 +28,7 @@ export default function FindWork() {
 										className='h-12 bg-white w-full px-4 lg:pl-8 lg:max-w-sm rounded-md outline-none border-none'
 										placeholder='Search'
 									/>
-									<button className='bg-yellow-500 hover:bg-yellow-600 h-12 px-4 max-w-xl rounded-r-md font-bold'>
+									<button className='bg-yellow-500 hover:bg-yellow-600 h-12 text-white px-4 max-w-xl rounded-r-md font-bold'>
 										Search
 									</button>
 								</form>

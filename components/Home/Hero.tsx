@@ -49,7 +49,7 @@ export default function Hero() {
 									Artisan within reach.
 								</p>
 								<button
-									className='bg-yellow-500 hover:bg-yellow-600 h-10 w-28 rounded-[3px] font-bold'
+									className='bg-yellow-500 text-white hover:bg-yellow-600 h-10 w-28 rounded-[3px] font-bold'
 									onClick={handleWork}>
 									Find work
 								</button>
