@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaHamburger, FaTimes } from 'react-icons/fa';
 import { useRouter } from 'next/router';
+import Button from '../ui/Button';
 
 export const useToggle = (intialState = false) => {
 	const [state, setState] = useState(intialState);
@@ -54,7 +55,7 @@ export default function NavBar() {
 				</ul>
 				<div className='hidden md:hidden lg:flex lg:flex-row h-full gap-4 my-4 items-center'>
 					<button
-						className='bg-yellow-500 hover:bg-yellow-600 p-2 h-10 w-24 rounded-[3px] font-bold'
+						className='bg-yellow-500 hover:bg-yellow-600 text-white p-2 h-10 w-24 rounded-[3px] font-bold'
 						onClick={handleRouter}>
 						Login
 					</button>
@@ -88,11 +89,12 @@ export default function NavBar() {
 							</li>
 						</ul>
 						<div className='flex flex-col my-4 space-y-4 items-center'>
-							<button
+							<Button onClick={handleRouter}>Login</Button>
+							{/* <button
 								className='bg-yellow-500 hover:bg-yellow-600 p-2 h-10 w-24 rounded-[3px] font-bold'
 								onClick={handleRouter}>
 								Login
-							</button>
+							</button> */}
 							<button className='bg-white font-bold text-sm hover:bg-gray-600 p-3 px-5  h-12  rounded-full'>
 								800 456 889
 							</button>

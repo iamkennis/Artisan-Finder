@@ -45,7 +45,7 @@ export default function SignUp() {
 			</div>
 
 			<form>
-				<div className='grid grid-cols-2 items-center gap-4'>
+				<div className='grid md:grid-cols-2 items-center gap-4'>
 					<div>
 						<Input
 							label='Name'
@@ -77,12 +77,12 @@ export default function SignUp() {
 					<div>
 						<Input
 							label='Password'
-							type={isToggle ? 'password' : 'text'}
+							type={isToggle ? 'text' : 'password'}
 							onChange={setPassword}
 							placeholder='Enter your password'
 							value={password}
 							onClick={toggle}
-							icons={isToggle ? <FaEye /> : <FaEyeSlash />}
+							icons={isToggle ? <FaEyeSlash /> : <FaEye />}
 						/>
 					</div>
 					<div>
@@ -112,8 +112,8 @@ export default function SignUp() {
 			<div className='mt-4'>
 				<Button loading={loading}>Create Account</Button>
 			</div>
-			<div className='text-center my-4'>
-				<p className='text-slate-700 text-sm leading-none my-1'>
+			<div className='text-center my-4 px-18'>
+				<p className='text-slate-700 md:max-w text-sm leading-none my-1'>
 					By clicking Create account,I agree that I have read and accepted the{' '}
 					<span className='text-yellow-400'>Terms of Use</span> and{' '}
 					<span className='text-yellow-400'>Privacy Policy</span>
