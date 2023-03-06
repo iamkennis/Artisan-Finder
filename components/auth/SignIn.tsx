@@ -29,7 +29,7 @@ export default function SignIn() {
 				<p className='font-normal text-[14px]'>
 					New User?{' '}
 					<Link href='/signup'>
-						<span className='text-yellow-400 font-bold text-[14px] cursor-auto'>
+						<span className='text-yellow-400 font-bold text-[14px] cursor-pointer'>
 							Create an account
 						</span>
 					</Link>
@@ -64,12 +64,12 @@ export default function SignIn() {
 				<span className='text-center'>Or</span>
 				<button className='h-10 w-64 border-1 border-gray-200 text-white bg-red-500 font-bold rounded-[3px] text-black'>
 					<span className='flex justify-center items-center gap-2'>
-					<FaGoogle /> Contiune with Google
+					<FaGoogle /> Contiune with google
 					</span>
 				</button>
 				<button className='h-10 w-64 text-white bg-blue-600 rounded-[3px] font-bold text-black'>
 					<span className='flex justify-center items-center gap-2'>
-						<FaFacebook /> Contiune with Facebook
+						<FaFacebook /> Contiune with facebook
 					</span>
 				</button>
 			</div>
