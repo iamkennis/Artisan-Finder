@@ -28,12 +28,12 @@ export default function FindHire() {
 							</p>
 						</div>
 						<div>
-							<form className='h-12 bg-white w-full lg:max-w-sm rounded-md font-bold flex flex-row justify-between'>
+							<form className='h-10 bg-white w-full lg:max-w-sm rounded-[2px] font-bold flex flex-row justify-between'>
 								<input
-									className='h-12 bg-white w-full px-4 lg:pl-8 lg:max-w-sm rounded-md outline-none border-none'
+									className='h-10 bg-white w-full px-4 lg:pl-8 lg:max-w-sm rounded-[2px] outline-none border-none'
 									placeholder='Search'
 								/>
-								<button className='bg-yellow-500 text-white hover:bg-yellow-600 h-12 px-4 max-w-xl rounded-r-md font-bold'>
+								<button className='bg-yellow-500 text-white hover:bg-yellow-600 h-10 px-4 max-w-xl rounded-r-[2px] font-bold'>
 									Search
 								</button>
 							</form>
@@ -41,25 +41,28 @@ export default function FindHire() {
 					</div>
 					<div className='col-span-7'>
 						<div className='grid lg:grid-flow-col lg:items-center lg:gap-4'>
-							<form className='h-12 bg-white w-full lg:max-w-sm rounded-md flex flex-row'>
-								<FaMapMarkerAlt className='text-black-400 lg:absolute text-base m-4' />
+							<form className='h-10 bg-white w-full lg:max-w-sm rounded-[2px] flex flex-row'>
+								<FaMapMarkerAlt className='text-black-400 lg:absolute text-base m-3' />
 								<input
-									className='h-12 max-w-md  bg-white lg:px-10  lg:placeholder:text-sm rounded-md outline-none border-none'
+									className='h-10 max-w-md  bg-white lg:px-10  lg:placeholder:text-sm rounded-md outline-none border-none'
 									placeholder='Enter your location'
 								/>
 							</form>
-							<select className='h-12 bg-white w-full rounded-md lg:max-w-sm font-sm my-4 outline-none px-4'>
+							<select className='h-10 bg-white w-full rounded-[2px] lg:max-w-sm font-sm my-4 outline-none px-4'>
 								<option>All categories</option>
 								<option>SW</option>
 								<option>AS</option>
 							</select>
-							<select className='h-12 bg-white w-full rounded-md lg:max-w-sm font-sm outline-none px-4'>
+							<select className='h-10 bg-white w-full rounded-[2px] lg:max-w-sm font-sm outline-none px-4'>
 								<option>All types</option>
 								<option>ER</option>
 								<option>EF</option>
 							</select>
 						</div>
 					</div>
+				</div>
+				<div>
+
 				</div>
 			</section>
 		</>

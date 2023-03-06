@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-		<div>
+		<>
 			<div className='text-center my-8 h-full px-18'>
 				<ul className='flex flex-col lg:flex-row lg:gap-4 lg:justify-center text-yellow-500'>
 					<li>PRIVACY POLICY</li>
@@ -18,6 +18,6 @@ export default function Footer() {
 					<img src='/twitter.svg' />
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }

@@ -36,7 +36,7 @@ export default function SignUp() {
 					<p className='font-normal text-[14px]'>
 						Already have account?{' '}
 						<Link href='/signin'>
-							<span className='text-yellow-400 font-bold text-[14px] cursor-auto'>
+							<span className='text-yellow-400 font-bold text-[14px] cursor-pointer'>
 								SignIn
 							</span>
 						</Link>
