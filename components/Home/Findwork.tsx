@@ -18,9 +18,6 @@ const nameData = [
 },
 {
   name: "John Micheal"
-},
-{
-  name: "Micheal Doe"
 }
 ]
 
@@ -113,7 +110,7 @@ const nameData = [
             </div>
           </div>
         </div>
-        <section className="border-2 border-gray-400 rounded-lg w-full h-full col-span-6 px-2">
+        <section className="border-2 border-gray-400 rounded-lg w-full h-screen col-span-6 px-2">
           <section className="h-40 py-8 px-4 gap-4">
              <div className="bg-yellow-400 max-w-[130px] rounded-lg px-4">
               <p className="text-sm font-bold">Recommended</p>
