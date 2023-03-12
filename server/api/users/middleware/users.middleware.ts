@@ -1,6 +1,7 @@
 import express from 'express';
-import userService from '../services/user.services';
+import UserServices from '../services/user.services';
 import debug from 'debug';
+import * as argon2 from 'argon2';
 
 const log: debug.IDebugger = debug('app:users-controller');
 class UsersMiddleware {
@@ -18,6 +19,23 @@ class UsersMiddleware {
             });
         }
     }
+
+    async verifyUserPassword( req: express.Request,
+        res: express.Response,
+        next: express.NextFunction) {
+            const user: any = await UserServices.getUserByEmailWithPassword(req.body.email)
+            if(user){
+                const passwordHash = user.password
+                if(await argon2.verify(passwordHash, req.body.password)){
+                    req.body = {
+                         userId: user._id,
+                         email: user.email
+                    }
+                    return next();
+                }
+            }
+            res.status(400).send('Incorrect email or password')
+        }
 
     // async validateSameEmailDosentExist(req: express.Request,
     //     res: express.Response,

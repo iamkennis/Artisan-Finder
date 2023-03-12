@@ -55,6 +55,10 @@ class UsersDao {
         .skip(limit * page)
         .exec();
 }
+
+ async getUserByEmailwithPassword(email:string){
+    return this.User.findOne({email:email}).select('_id email +password').exec()
+ }
 }
 
 
