@@ -21,6 +21,10 @@ class UsersController {
         const users = await userService.register(req.body)
         res.status(200).send(users)
     }
+
+    async login(req:express.Request, res:Response){
+        
+    }
 }
 
 export default new UsersController();
