@@ -4,23 +4,28 @@ import Input from '../ui/Input';
 import Link from 'next/link';
 import { FaEye, FaEyeSlash, FaFacebook, FaGoogle } from 'react-icons/fa';
 import { useToggle } from '../Home/NavBar';
+import {signInWithEmailAndPassword} from 'firebase/auth'
+import {auth} from '../../pages/firebase';
 
 export default function SignIn() {
-	// const [event, updateEvent] = useReducer(
-	// 	(prev: any, next: any) => {
-	// 		return { ...prev, ...next };
-	// 	},
-	// 	{
-	// 		email: '',
-	// 		password: '',
-	// 		isToggle: '',
-	// 		loading: false
-	// 	},
-	// );
+	
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [isToggle, toggle]: any = useToggle();
 	const [loading, setLoading] = useState(false);
+
+	// function handleSignIn(e:any) {
+	// 	setLoading(true)
+    //     e.preventDefault(); 
+	// 	signInWithEmailAndPassword(auth,email,password)
+	// 	.then((userCredential) => {
+    //         console.log(userCredential)
+	// 		setLoading(false)
+	// 	}).catch((error)=> {
+	// 		console.log(error)
+	// 		setLoading(false)
+	// 	})
+	// }
 
 	return (
 		<div className='flex flex-col items-center my-28'>
@@ -60,7 +65,7 @@ export default function SignIn() {
 					<Button loading={loading}>Login</Button>
 				</div>
 			</form>
-			<div className='flex flex-col gap-4'>
+			{/* <div className='flex flex-col gap-4'>
 				<span className='text-center'>Or</span>
 				<button className='h-10 w-64 border-1 border-gray-200 text-white bg-red-500 font-bold rounded-[3px] text-black'>
 					<span className='flex justify-center items-center gap-2'>
@@ -72,7 +77,7 @@ export default function SignIn() {
 						<FaFacebook /> Contiune with facebook
 					</span>
 				</button>
-			</div>
+			</div> */}
 			<div className='text-center mt-4 px-18'>
 				<p className='text-slate-700 text-sm leading-none my-1'>
 					By clicking Create account,I agree that I have read and accepted the{' '}

@@ -4,6 +4,8 @@ import Input from '../ui/Input';
 import Link from 'next/link';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useToggle } from '../Home/NavBar';
+import {createUserWithEmailAndPassword} from 'firebase/auth'
+import {auth} from '../../pages/firebase'
 
 export default function SignUp() {
 	const [name, setName] = useState('');
@@ -13,20 +15,19 @@ export default function SignUp() {
 	const [province, setProvince] = useState('');
 	const [isToggle, toggle]: any = useToggle();
 	const [loading, setLoading] = useState(false);
-
-	// const handleValidation = useCallback(() => {
-	// 	const validPassword = /^(?=.*[a-zA-Z])(?=.*[0-9])/.test(password);
-
-	// 	if (dirty) {
-	// 		setDisabled(
-	// 			!validate(email) || password.length < 7 || !validPassword
-	// 		);
-	// 	}
-	// }, [email, password, dirty]);
-
-	// useEffect(() => {
-	// 	handleValidation();
-	// }, [handleValidation]);
+	
+	// function handleSignUp(e:any){
+	// 	setLoading(true)
+	// 	e.preventDefault(); 
+	// 	createUserWithEmailAndPassword(auth, name, lastName)
+	// 	.then((userCredential) => {
+    //         console.log(userCredential)
+	// 		setLoading(false)
+	// 	}).catch((error)=> {
+	// 		console.log(error)
+	// 		setLoading(false)
+	// 	})
+	// }
 
 	return (
 		<div className='flex flex-col items-center gap-3'>
