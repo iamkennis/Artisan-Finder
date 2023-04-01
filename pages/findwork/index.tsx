@@ -1,5 +1,5 @@
 import React from 'react'
-import FindWork from '../../components/Home/Findwork'
+import FindWork from '../../components/home/Findwork'
 import Layout from '../../components/layouts/Layout'
 
 export default function FindWorkPage() {

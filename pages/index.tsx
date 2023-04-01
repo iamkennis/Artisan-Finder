@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Features from '../components/Home/Features'
-import Hero from '../components/Home/Hero'
-import NavBar from '../components/Home/NavBar'
+import Features from '../components/home/Features'
+import Hero from '../components/home/Hero'
+import NavBar from '../components/home/NavBar'
 import Layout from '../components/layouts/Layout'
 
 export default function Home() {
