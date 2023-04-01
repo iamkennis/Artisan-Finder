@@ -3,7 +3,7 @@ import Button from '../ui/Button';
 import Input from '../ui/Input';
 import Link from 'next/link';
 import { FaEye, FaEyeSlash, FaFacebook, FaGoogle } from 'react-icons/fa';
-import { useToggle } from '../Home/NavBar';
+import { useToggle } from '../home/NavBar';
 import {signInWithEmailAndPassword} from 'firebase/auth'
 import {auth} from '../../pages/firebase';
 

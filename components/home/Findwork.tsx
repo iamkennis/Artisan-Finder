@@ -9,7 +9,7 @@ import { Disclosure } from "@headlessui/react";
 export default function FindWork() {
   const [checked, setChecked] = useState(false);
 
-  function handleChecked() {}
+  function handleChecked(){}
 
   const nameData = [
     {

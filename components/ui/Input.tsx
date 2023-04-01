@@ -1,5 +1,5 @@
 import React, { InputHTMLAttributes } from 'react';
-import { useToggle } from '../Home/NavBar';
+import { useToggle } from '../home/NavBar';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 	className?: any;

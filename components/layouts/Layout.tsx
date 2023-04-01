@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../Home/Footer'
-import NavBar from '../Home/NavBar'
+import Footer from '../home/Footer'
+import NavBar from '../home/NavBar'
 
 
 
