@@ -23,7 +23,7 @@ export default function NavBar() {
 
 	return (
 		<nav>
-			<div className='w-full flex flex-row items-center  lg:fixed lg:top-0 lg:z-50 bg-white justify-between px-12'>
+			<div className='w-full flex flex-row items-center  lg:fixed lg:top-0 lg:z-50 bg-white justify-between px-8'>
 				<div className='py-5'>
 					<Link href='/'>
 						<img
