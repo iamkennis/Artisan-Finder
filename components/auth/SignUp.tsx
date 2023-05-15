@@ -4,8 +4,8 @@ import Input from '../ui/Input';
 import Link from 'next/link';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useToggle } from '../home/NavBar';
-import {createUserWithEmailAndPassword} from 'firebase/auth'
-import {auth} from '../../pages/firebase'
+// import {createUserWithEmailAndPassword} from 'firebase/auth'
+// import {auth} from '../../pages/firebase'
 
 export default function SignUp() {
 	const [name, setName] = useState('');
