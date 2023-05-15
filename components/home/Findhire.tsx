@@ -147,7 +147,7 @@ export default function FindHire() {
               </div>
             </div>
           </div>
-          <section className="border-2 border-gray-400 rounded-lg w-full h-screen overflow-y-scroll col-span-6 px-2">
+          <section className="border-2 border-gray-400 rounded-lg w-full h-screen overflow-y-scroll col-span-8 px-2">
             <section className="h-40 py-8 px-4 gap-4">
               <div className="bg-yellow-400 max-w-[130px] rounded-lg px-4">
                 <p className="text-sm font-bold">Recommended</p>
@@ -201,22 +201,6 @@ export default function FindHire() {
           </div>
             </section>
           </section>
-
-          <div className="border-2 border-gray-400 rounded-lg w-full h-40 col-span-3">
-            <div className="px-2 gap-4">
-              <h3>Others</h3>
-              <form>
-                <input
-                  type="checkbox"
-                  name="Building maintence"
-                  value="Building maintence"
-                />
-                <input type="checkbox" name="Carpenter" value="Carpenter" />
-                <input type="checkbox" name="Painting" value="Painting" />
-                <input type="checkbox" name="Plumbing" value="Plumbing" />
-              </form>
-            </div>
-          </div>
         </main>
 		</>
 	);
