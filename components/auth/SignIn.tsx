@@ -77,7 +77,7 @@ export default function SignIn() {
 						<FaFacebook /> Contiune with facebook
 					</span>
 				</button>
-			</div> */}
+			</div>  */}
 			<div className='text-center mt-4 px-18'>
 				<p className='text-slate-700 text-sm leading-none my-1'>
 					By clicking Create account,I agree that I have read and accepted the{' '}

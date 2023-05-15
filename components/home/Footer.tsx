@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
 		<>
-			<div className='text-center my-8 h-full px-18'>
+			<div className='text-center my-8 px-18'>
 				<ul className='flex flex-col lg:flex-row lg:gap-4 lg:justify-center text-yellow-500'>
 					<li>PRIVACY POLICY</li>
 					<li>TERMS OF USE</li>
