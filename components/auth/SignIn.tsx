@@ -4,8 +4,8 @@ import Input from '../ui/Input';
 import Link from 'next/link';
 import { FaEye, FaEyeSlash, FaFacebook, FaGoogle } from 'react-icons/fa';
 import { useToggle } from '../home/NavBar';
-import {signInWithEmailAndPassword} from 'firebase/auth'
-import {auth} from '../../pages/firebase';
+// import {signInWithEmailAndPassword} from 'firebase/auth'
+// import {auth} from '../../pages/firebase';
 
 export default function SignIn() {
 	
